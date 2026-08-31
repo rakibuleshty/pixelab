@@ -1,0 +1,335 @@
+.hero {
+  width: 100%;
+  max-width: 1160px;
+  min-height: 480px;
+  margin: 70px auto 0;
+  padding: 0 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.hero-content {
+  width: 500px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  margin: 0;
+  color: #0c1b3a;
+
+  font-family: "Ageo", sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hero-content p {
+  margin-top: 25px;
+  margin-bottom: 0;
+
+  color: #000;
+  font-family: "Ageo", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.get-started {
+  width: 94px;
+  height: 29px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #ff6b00;
+  color: #fff;
+
+  font-family: "Ageo", sans-serif;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.learn-more {
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  border: none;
+  background: transparent;
+
+  font-family: "Ageo", sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.play-button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #ff6b00;
+  border-radius: 50%;
+
+  color: #fff;
+  background: #666;
+
+  font-size: 10px;
+}
+
+/* =========================
+   IMAGE SECTION
+========================= */
+
+.hero-image-section {
+  position: relative;
+
+  width: 480px;
+  height: 430px;
+
+  margin-right: 0;
+}
+
+/* Circular background behind person */
+
+.hero-circle {
+  position: absolute;
+
+  width: 310px;
+  height: 310px;
+
+  right: 25px;
+  top: 65px;
+
+  border-radius: 50%;
+
+  background: #f4f4f4;
+}
+
+/* Person */
+
+.hero-image {
+  position: absolute;
+
+  width: 390px;
+  height: auto;
+
+  right: 15px;
+  top: 10px;
+
+  z-index: 2;
+}
+
+/* =========================
+   REVIEW CARDS
+========================= */
+
+.review-card {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+
+  background: #fff;
+
+  border-radius: 7px;
+
+  padding: 10px 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  font-family: "Ageo", sans-serif;
+
+  z-index: 5;
+}
+
+.review-card strong {
+  display: block;
+
+  color: #000;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.review-rating {
+  margin-top: 4px;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: #000;
+
+  font-size: 7px;
+}
+
+.review-rating span {
+  color: #ffb000;
+  font-size: 9px;
+}
+
+.review-rating small {
+  color: #999;
+  font-size: 6px;
+}
+
+.review-icon {
+  width: 24px;
+  height: 24px;
+
+  margin-right: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  background: #000;
+  color: #fff;
+
+  font-size: 14px;
+}
+
+/* Top card */
+
+.top-card {
+  left: 25px;
+  top: 85px;
+
+  width: 125px;
+  height: 32px;
+}
+
+/* Bottom card */
+
+.bottom-card {
+  left: -10px;
+  bottom: 55px;
+
+  width: 115px;
+  height: 28px;
+}
+
+/* =========================
+   LIGHT BULB
+========================= */
+
+.idea {
+  position: absolute;
+
+  left: 55px;
+  top: 190px;
+
+  z-index: 4;
+}
+
+.lightbulb {
+  font-size: 35px;
+  transform: rotate(-10deg);
+}
+
+/* =========================
+   DECORATIVE ARROWS
+========================= */
+
+.arrow {
+  position: absolute;
+
+  color: #777;
+
+  font-size: 45px;
+
+  z-index: 3;
+}
+
+.arrow-one {
+  right: -5px;
+  top: 80px;
+
+  transform: rotate(-25deg);
+}
+
+.arrow-two {
+  left: 55px;
+  top: 130px;
+
+  transform: rotate(20deg);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .hero-content {
+    width: 45%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-image-section {
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 340px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    margin-top: 50px;
+
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 25px;
+  }
+
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image-section {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 480px;
+  }
+}
